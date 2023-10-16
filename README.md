@@ -12,7 +12,7 @@
 
 ### Website Demo:
 
-UI - https:///SerhiiPodaiko.github.io/React_SEO
+UI - https://SerhiiPodaiko.github.io/React_SEO
 
 - Desktop version
 
