@@ -4090,7 +4090,7 @@ var PAGE_SLUGS = {
 
 /***/ }),
 
-/***/ 682:
+/***/ 201:
 /***/ ((module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -4266,15 +4266,15 @@ var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 // EXTERNAL MODULE: ./src/constants/pages.js
 var pages = __webpack_require__(348);
 ;// CONCATENATED MODULE: ./src/assets/icons/home.svg
-/* harmony default export */ const home = (__webpack_require__.p + "6ee26cc045a15dcc8d85b4a42e4e7a13.svg");
+/* harmony default export */ const home = (__webpack_require__.p + "5ca038e9a2167c5e7338baad9fd1e7fa.svg");
 ;// CONCATENATED MODULE: ./src/assets/icons/posts.svg
-/* harmony default export */ const posts = (__webpack_require__.p + "3109841da886fb68f34f9a473623d102.svg");
+/* harmony default export */ const posts = (__webpack_require__.p + "b89119bc8abae7d6181887fb55a14f3d.svg");
 ;// CONCATENATED MODULE: ./src/assets/icons/settings.svg
-/* harmony default export */ const settings = (__webpack_require__.p + "298d95c2e66b5977ac53b648e5779790.svg");
+/* harmony default export */ const settings = (__webpack_require__.p + "d72bba5a0ba887aceb28b637cde62391.svg");
 ;// CONCATENATED MODULE: ./src/assets/icons/menu.svg
-/* harmony default export */ const menu = (__webpack_require__.p + "a3be17904168cfe891d125a9689ec1f9.svg");
+/* harmony default export */ const menu = (__webpack_require__.p + "2eb7cb988410624574f79e789cb74d26.svg");
 ;// CONCATENATED MODULE: ./src/assets/icons/albums.svg
-/* harmony default export */ const albums = (__webpack_require__.p + "0eae1cd1763c11773c14d75089763362.svg");
+/* harmony default export */ const albums = (__webpack_require__.p + "10008e62bfbb51dcd533b5dcb42654f5.svg");
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(893);
 ;// CONCATENATED MODULE: ./src/components/Sidebar/Sidebar.js
@@ -4352,7 +4352,7 @@ var Sidebar = function Sidebar() {
 };
 /* harmony default export */ const Sidebar_Sidebar = (Sidebar);
 // EXTERNAL MODULE: ./src/assets/icons/error.svg
-var icons_error = __webpack_require__(504);
+var icons_error = __webpack_require__(780);
 ;// CONCATENATED MODULE: ./src/components/Error/ErrorFallback.jsx
 
 
@@ -4609,14 +4609,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ 504:
+/***/ 780:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "f054ecd8be150d8744ad70c43db45d9a.svg");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "557624b68c4923334d87a4721148a3d7.svg");
 
 /***/ }),
 
@@ -7631,7 +7631,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("59782d0e24dc14372b8c")
+/******/ 		__webpack_require__.h = () => ("a06ad143e72c22f53708")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -7918,7 +7918,7 @@ if (true) {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(682);
+/******/ 	var __webpack_exports__ = __webpack_require__(201);
 /******/ 	
 /******/ })()
 ;
