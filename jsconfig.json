@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "baseUrl": "./",
+    "types": ["node"],
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@styles/*": ["src/styles/*"],
+      "@lib/*": ["src/lib/*"],
+      "@ui/*": ["src/ui/*"],
+      "@constants/*": ["src/constants/*"],
+      "@utils/*": ["utils/*"],
+      "@routes/*": ["src/routes/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  }
+}
