@@ -12,7 +12,7 @@
 
 ### Website Demo:
 
-UI - https://proxy-seller-blush.vercel.app/
+UI - https:///SerhiiPodaiko.github.io/React_SEO
 
 - Desktop version
 
