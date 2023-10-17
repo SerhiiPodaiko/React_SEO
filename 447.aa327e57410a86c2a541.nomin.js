@@ -113,7 +113,9 @@ var Albums = function Albums() {
         children: albums.map(function (album) {
           return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
             className: "col-12 p-3 border rounded",
-            children: album.title
+            children: /*#__PURE__*/(0,jsx_runtime.jsx)("span", {
+              children: album.title
+            })
           }, album.id);
         })
       })]
