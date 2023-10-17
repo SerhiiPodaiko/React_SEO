@@ -12,7 +12,7 @@ const Layout = () => {
         <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => navigate(PAGE_SLUGS.home)}>
             <div className='d-flex vh-100'>
                 <Sidebar />
-                <main className='w-100 px-2 px-md-5 py-4 overflow-y-auto'>
+                <main className='content w-100 px-2 px-md-5 py-4 overflow-y-auto'>
                     <Outlet />
                 </main>
             </div>

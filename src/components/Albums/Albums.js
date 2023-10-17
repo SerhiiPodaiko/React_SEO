@@ -25,7 +25,7 @@ const Albums = () => {
                     {
                         albums.map(album => (
                             <div key={album.id} className='col-12 p-3 border rounded'>
-                                {album.title}
+                                <span>{album.title}</span>
                             </div>
                         ))
                     }

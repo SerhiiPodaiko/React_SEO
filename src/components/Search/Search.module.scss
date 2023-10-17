@@ -1,8 +1,9 @@
 .searchInput {
   border: none;
-  border-bottom: 2px solid var(--orange-color);
+  border-bottom: 1px solid var(--orange-color);
   color: var(--orange-color);
   outline: none;
+  background: transparent;
 
   &::placeholder {
     font-size: 14px;

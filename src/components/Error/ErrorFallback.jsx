@@ -6,7 +6,7 @@ const ErrorFallback = ({ error, resetErrorBoundary }) => {
             <div className='d-flex align-items-center justify-content-between'>
                 <div className='d-flex flex-column gap-2'>
                     <strong>Something went wrong:</strong>
-                    <pre>{error.message}</pre>
+                    <span>{error.message}</span>
                 </div>
                 <img className='img-fluid' src={ErrorSvg} alt='Error | 404' />
             </div>
