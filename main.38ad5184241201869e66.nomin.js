@@ -4515,7 +4515,7 @@ var AlbumsPage = /*#__PURE__*/(0,react.lazy)(function () {
   return Promise.all(/* import() */[__webpack_require__.e(593), __webpack_require__.e(861), __webpack_require__.e(447)]).then(__webpack_require__.bind(__webpack_require__, 447));
 });
 var SettingsPage = /*#__PURE__*/(0,react.lazy)(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(593), __webpack_require__.e(896)]).then(__webpack_require__.bind(__webpack_require__, 896));
+  return Promise.all(/* import() */[__webpack_require__.e(593), __webpack_require__.e(124)]).then(__webpack_require__.bind(__webpack_require__, 124));
 });
 var UserOnePostsPage = /*#__PURE__*/(0,react.lazy)(function () {
   return Promise.all(/* import() */[__webpack_require__.e(593), __webpack_require__.e(861), __webpack_require__.e(839)]).then(__webpack_require__.bind(__webpack_require__, 839));
@@ -9567,13 +9567,13 @@ if (true) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + {"553":"95dbfb4eaacf27cdad34","896":"b8d146d85e2a2905a937","935":"e5af9679c3b7c1e55608"}[chunkId] + ".css";
+/******/ 			return "" + chunkId + "." + {"124":"b8d146d85e2a2905a937","553":"95dbfb4eaacf27cdad34","935":"e5af9679c3b7c1e55608"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("aa327e57410a86c2a541")
+/******/ 		__webpack_require__.h = () => ("38ad5184241201869e66")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -9750,7 +9750,7 @@ if (true) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"553":1,"896":1,"935":1};
+/******/ 			var cssChunks = {"124":1,"553":1,"935":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {

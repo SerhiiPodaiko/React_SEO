@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[896],{
+(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[124],{
 
-/***/ 896:
+/***/ 124:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -24,18 +24,18 @@ var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
 /* harmony default export */ const Settings_module = ({"settings":"AbaWFnfwItP36q2gdULK","settingsTitle":"ejVPRLtKweACeDxbvqPz","settingsHead":"x21siphHNKf0plzlyf78"});
 // EXTERNAL MODULE: ./src/constants/pages.js
 var pages = __webpack_require__(348);
-;// CONCATENATED MODULE: ./src/assets/images/desktop-full.png
-/* harmony default export */ const desktop_full = (__webpack_require__.p + "35dbf5632338d3cbdbea861e3a836b35.png");
-;// CONCATENATED MODULE: ./src/assets/images/desktop-short.png
-/* harmony default export */ const desktop_short = (__webpack_require__.p + "825674a4907f2825c9a872e5b1833866.png");
-;// CONCATENATED MODULE: ./src/assets/images/laptop-full.jpg
-/* harmony default export */ const laptop_full = (__webpack_require__.p + "ddb3d28e53961183ac9a6bf6e9328e7b.jpg");
-;// CONCATENATED MODULE: ./src/assets/images/laptop-short.jpg
-/* harmony default export */ const laptop_short = (__webpack_require__.p + "92b2427c96d5702d3cb3e7f4e5242623.jpg");
-;// CONCATENATED MODULE: ./src/assets/images/mobile-full.jpg
-/* harmony default export */ const mobile_full = (__webpack_require__.p + "c8df192aa364593a25c53a11577c11af.jpg");
-;// CONCATENATED MODULE: ./src/assets/images/mobile-short.jpg
-/* harmony default export */ const mobile_short = (__webpack_require__.p + "f394fa25d2ab2fd33a4feb9d85cd0474.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/desktop-full-dark.jpg
+/* harmony default export */ const desktop_full_dark = (__webpack_require__.p + "793214be50d727634d8a9ccf492292bd.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/desktop-short-light.jpg
+/* harmony default export */ const desktop_short_light = (__webpack_require__.p + "e30bc50fbbce76aa81b3f44f081936d6.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/laptop-dark.jpg
+/* harmony default export */ const laptop_dark = (__webpack_require__.p + "a4987c6e809f46a92d0d90c0d45833db.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/laptop-light.jpg
+/* harmony default export */ const laptop_light = (__webpack_require__.p + "8e0de0629ed6cd7dcd382849bc9770ac.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/mobile-dark.jpg
+/* harmony default export */ const mobile_dark = (__webpack_require__.p + "a482cad89e8c9f312d2323415ec782d3.jpg");
+;// CONCATENATED MODULE: ./src/assets/images/mobile-light.jpg
+/* harmony default export */ const mobile_light = (__webpack_require__.p + "5fea2075d7755132a7a8a8a7ed7717d0.jpg");
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(893);
 ;// CONCATENATED MODULE: ./src/components/Settings/Settings.jsx
@@ -81,15 +81,15 @@ var Settings = function Settings() {
                 className: "col-12 col-md-6",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: desktop_full,
-                  alt: "Desktop Full"
+                  src: desktop_full_dark,
+                  alt: "Desktop Full Dark"
                 })
               }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
                 className: "col-12 col-md-6 mt-4 mt-md-0",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: desktop_short,
-                  alt: "Desktop Short"
+                  src: desktop_short_light,
+                  alt: "Desktop Short Light"
                 })
               })]
             })
@@ -109,14 +109,14 @@ var Settings = function Settings() {
                 className: "col-12 col-md-6",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: laptop_full,
+                  src: laptop_dark,
                   alt: "Laptop Full"
                 })
               }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
                 className: "col-12 col-md-6 mt-4 mt-md-0",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: laptop_short,
+                  src: laptop_light,
                   alt: "Laptop Short"
                 })
               })]
@@ -137,15 +137,15 @@ var Settings = function Settings() {
                 className: "col-12 col-md-6 text-center",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: mobile_full,
-                  alt: "Mobile Full"
+                  src: mobile_dark,
+                  alt: "Mobile dark"
                 })
               }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
                 className: "col-12 col-md-6 mt-4 mt-md-0 text-center",
                 children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
                   className: "img-fluid",
-                  src: mobile_short,
-                  alt: "Mobile Short"
+                  src: mobile_light,
+                  alt: "Mobile light"
                 })
               })]
             })
