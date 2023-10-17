@@ -30,7 +30,7 @@ body[data-theme='dark'] {
 body[data-theme='light'] {
     background: var(--white-color);
 
-    a {
+    a, span {
         color: var(--blue-color);
     }
 
@@ -47,8 +47,10 @@ body[data-theme='light'] {
 }
 
 .content.disabled {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    pointer-events: none;
+    @media (max-width: 768px) {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        pointer-events: none;
+    }
 }

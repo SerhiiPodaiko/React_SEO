@@ -3,12 +3,12 @@ import cn from 'classnames'
 
 import styles from './Settings.module.scss'
 import { PAGE_SLUGS } from '@constants/pages'
-import DesktopFullImage from '@assets/images/desktop-full.png'
-import DesktopShortImage from '@assets/images/desktop-short.png'
-import LaptopFullImage from '@assets/images/laptop-full.jpg'
-import LaptopShortImage from '@assets/images/laptop-short.jpg'
-import MobileFullImage from '@assets/images/mobile-full.jpg'
-import MobileShortImage from '@assets/images/mobile-short.jpg'
+import DesktopFullDarkImage from '@assets/images/desktop-full-dark.jpg'
+import DesktopShortLightImage from '@assets/images/desktop-short-light.jpg'
+import LaptopDarkImage from '@assets/images/laptop-dark.jpg'
+import LaptopLightImage from '@assets/images/laptop-light.jpg'
+import MobileDarkImage from '@assets/images/mobile-dark.jpg'
+import MobileLightImage from '@assets/images/mobile-light.jpg'
 
 
 const Settings = () => (
@@ -26,10 +26,10 @@ const Settings = () => (
                     <div className='pt-3 border rounded position-relative'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
-                                <img className='img-fluid' src={DesktopFullImage} alt='Desktop Full' />
+                                <img className='img-fluid' src={DesktopFullDarkImage} alt='Desktop Full Dark' />
                             </div>
                             <div className='col-12 col-md-6 mt-4 mt-md-0'>
-                                <img className='img-fluid' src={DesktopShortImage} alt='Desktop Short' />
+                                <img className='img-fluid' src={DesktopShortLightImage} alt='Desktop Short Light' />
                             </div>
                         </div>
                     </div>
@@ -40,10 +40,10 @@ const Settings = () => (
                     <div className='pt-3 border rounded position-relative'>
                         <div className='row'>
                             <div className='col-12 col-md-6'>
-                                <img className='img-fluid' src={LaptopFullImage} alt='Laptop Full' />
+                                <img className='img-fluid' src={LaptopDarkImage} alt='Laptop Full' />
                             </div>
                             <div className='col-12 col-md-6 mt-4 mt-md-0'>
-                                <img className='img-fluid' src={LaptopShortImage} alt='Laptop Short' />
+                                <img className='img-fluid' src={LaptopLightImage} alt='Laptop Short' />
                             </div>
                         </div>
                     </div>
@@ -54,10 +54,10 @@ const Settings = () => (
                     <div className='pt-3 border rounded position-relative'>
                         <div className='row'>
                             <div className='col-12 col-md-6 text-center'>
-                                <img className='img-fluid' src={MobileFullImage} alt='Mobile Full' />
+                                <img className='img-fluid' src={MobileDarkImage} alt='Mobile dark' />
                             </div>
                             <div className='col-12 col-md-6 mt-4 mt-md-0 text-center'>
-                                <img className='img-fluid' src={MobileShortImage} alt='Mobile Short' />
+                                <img className='img-fluid' src={MobileLightImage} alt='Mobile light' />
                             </div>
                         </div>
                     </div>

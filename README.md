@@ -16,12 +16,12 @@ UI - https://SerhiiPodaiko.github.io/React_SEO
 
 - Desktop version
 
-![Responsive Desktop website](src/assets/images/desktop-full.png)
+![Responsive Desktop website](src/assets/images/desktop-full-dark.jpg)
 
 - Laptop version
 
-![Responsive Desktop website](src/assets/images/laptop-short.jpg)
+![Responsive Desktop website](src/assets/images/laptop-light.jpg)
 
 - Mobile version
 
-![Responsive Desktop website](src/assets/images/mobile-full.jpg)
+![Responsive Desktop website](src/assets/images/mobile-light.jpg)
