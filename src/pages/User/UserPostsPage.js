@@ -1,21 +1,13 @@
-import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import Preloader from '@ui/Preloader/Preloader'
+import useUserOnePosts from '@hooks/users/useUserOnePosts'
 import favicon from '@assets/favicons/favicon-home.png'
 import { PAGE_SLUGS } from '@constants/pages'
-import { fetchGetOnePosts } from '@lib/posts/fetchGetOnePosts'
 
 const UserPostsPage = () => {
-    const [userPosts, setUserPosts] = useState([])
-    const { state: { id }} = useLocation()
-
-    useEffect(() => {
-        if (id) {
-            fetchGetOnePosts(id).then(data => setUserPosts(data))
-        }
-    }, [])
+    const { userPosts, id } = useUserOnePosts()
 
     if (!userPosts) return  <Preloader />
 

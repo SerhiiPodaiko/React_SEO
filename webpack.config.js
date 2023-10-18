@@ -34,7 +34,7 @@ module.exports = {
             // Styles
             {
                 test: /\.(css|scss|sass)$/,
-                exclude: /node_modules\/(?!bootstrap)/,
+                exclude: /node_modules/,
                 use: [
                     production ? MiniCssExtractPlugin.loader : 'style-loader',
                     {
@@ -143,11 +143,6 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(production  ? 'production' : 'development'),
         }),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false
-        //     }
-        // }),
         new UnminifiedWebpackPlugin()
     ],
 

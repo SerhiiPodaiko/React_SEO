@@ -1,5 +1,5 @@
 import styles from './Users.module.scss'
-import useUsers from '@hooks/useUsers'
+import useUsers from '@hooks/users/useUsers'
 import Search from '@components/Search/Search'
 import Sort from '@components/Sort/Sort'
 import User from './User'

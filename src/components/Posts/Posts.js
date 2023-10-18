@@ -1,39 +1,14 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import styles from './Posts.module.scss'
 import Post from './Post'
+import usePosts from '@hooks/usePosts'
 import Preloader from '@ui/Preloader/Preloader'
 import Alert from '@ui/Alert/Alert'
 import { PAGE_SLUGS } from '@constants/pages'
-import { fetchGetAllPosts } from '@lib/posts/fetchGetAllPosts'
 
 const Posts = () => {
-    const [posts, setPosts] = useState([])
-    const [loading, setLoading] = useState(false)
-    const [currentPage, setCurrentPage] = useState(1)
-    const [hasMore, setHasMore] = useState(true)
-
-    const postsPerPage = 10
-
-    useEffect(() => {
-        loadPosts(currentPage)
-    }, [currentPage])
-
-    const loadPosts = (page) => {
-        setLoading(true)
-        fetchGetAllPosts(postsPerPage, page).then(newPosts => {
-            if (newPosts.length === 0) {
-                setHasMore(false)
-            }
-            setPosts(prevPosts => [...prevPosts, ...newPosts])
-            setLoading(false)
-        })
-    }
-
-    const loadMorePosts = () => {
-        setCurrentPage(currentPage + 1)
-    }
+   const { posts, loading, loadMorePosts, hasMore } = usePosts()
 
     return (
         <section className={styles.posts}>
