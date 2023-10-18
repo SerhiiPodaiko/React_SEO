@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[839],{
+(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[30],{
 
 /***/ 243:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -20,7 +20,7 @@ var API = axios__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z.create({
 
 /***/ }),
 
-/***/ 839:
+/***/ 30:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -31,20 +31,16 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ User_UserPostsPage)
 });
 
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(294);
-// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
-var dist = __webpack_require__(250);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
-var react_router_dom_dist = __webpack_require__(655);
+var dist = __webpack_require__(655);
 // EXTERNAL MODULE: ./node_modules/react-helmet/es/Helmet.js
 var Helmet = __webpack_require__(593);
 // EXTERNAL MODULE: ./src/ui/Preloader/Preloader.jsx
 var Preloader = __webpack_require__(551);
-// EXTERNAL MODULE: ./src/assets/favicons/favicon-home.png
-var favicon_home = __webpack_require__(645);
-// EXTERNAL MODULE: ./src/constants/pages.js
-var pages = __webpack_require__(348);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(294);
+// EXTERNAL MODULE: ./node_modules/react-router/dist/index.js
+var react_router_dist = __webpack_require__(250);
 // EXTERNAL MODULE: ./src/lib/API.js
 var API = __webpack_require__(243);
 ;// CONCATENATED MODULE: ./src/lib/posts/fetchGetOnePosts.js
@@ -75,9 +71,7 @@ var fetchGetOnePosts = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(893);
-;// CONCATENATED MODULE: ./src/pages/User/UserPostsPage.js
+;// CONCATENATED MODULE: ./src/hooks/users/useUserOnePosts.js
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -85,6 +79,35 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+
+
+var useUserOnePosts = function useUserOnePosts() {
+  var _useState = (0,react.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    userPosts = _useState2[0],
+    setUserPosts = _useState2[1];
+  var _useLocation = (0,react_router_dist/* useLocation */.TH)(),
+    id = _useLocation.state.id;
+  (0,react.useEffect)(function () {
+    if (id) {
+      fetchGetOnePosts(id).then(function (data) {
+        return setUserPosts(data);
+      });
+    }
+  }, []);
+  return {
+    userPosts: userPosts,
+    id: id
+  };
+};
+/* harmony default export */ const users_useUserOnePosts = (useUserOnePosts);
+// EXTERNAL MODULE: ./src/assets/favicons/favicon-home.png
+var favicon_home = __webpack_require__(645);
+// EXTERNAL MODULE: ./src/constants/pages.js
+var pages = __webpack_require__(348);
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(893);
+;// CONCATENATED MODULE: ./src/pages/User/UserPostsPage.js
 
 
 
@@ -95,19 +118,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var UserPostsPage = function UserPostsPage() {
-  var _useState = (0,react.useState)([]),
-    _useState2 = _slicedToArray(_useState, 2),
-    userPosts = _useState2[0],
-    setUserPosts = _useState2[1];
-  var _useLocation = (0,dist/* useLocation */.TH)(),
-    id = _useLocation.state.id;
-  (0,react.useEffect)(function () {
-    if (id) {
-      fetchGetOnePosts(id).then(function (data) {
-        return setUserPosts(data);
-      });
-    }
-  }, []);
+  var _useUserOnePosts = users_useUserOnePosts(),
+    userPosts = _useUserOnePosts.userPosts,
+    id = _useUserOnePosts.id;
   if (!userPosts) return /*#__PURE__*/(0,jsx_runtime.jsx)(Preloader/* default */.Z, {});
   return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Helmet/* Helmet */.q, {
@@ -128,7 +141,7 @@ var UserPostsPage = function UserPostsPage() {
       children: [/*#__PURE__*/(0,jsx_runtime.jsx)("header", {
         children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
           className: "container d-flex align-items-center justify-content-between",
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(react_router_dom_dist/* Link */.rU, {
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(dist/* Link */.rU, {
             to: pages/* PAGE_SLUGS */.k.home,
             className: "btn btn-outline-primary",
             children: "Back to home"

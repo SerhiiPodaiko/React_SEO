@@ -1,7 +1,28 @@
 "use strict";
-(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[124],{
+(self["webpackChunkproxy_seller_test_task_seo"] = self["webpackChunkproxy_seller_test_task_seo"] || []).push([[238],{
 
-/***/ 124:
+/***/ 710:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(893);
+
+var SkeletonUI = function SkeletonUI(_ref) {
+  var count = _ref.count;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+    className: "placeholder-glow",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+      className: "placeholder col-".concat(count)
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SkeletonUI);
+
+/***/ }),
+
+/***/ 238:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -36,13 +57,56 @@ var pages = __webpack_require__(348);
 /* harmony default export */ const mobile_dark = (__webpack_require__.p + "a482cad89e8c9f312d2323415ec782d3.jpg");
 ;// CONCATENATED MODULE: ./src/assets/images/mobile-light.jpg
 /* harmony default export */ const mobile_light = (__webpack_require__.p + "5fea2075d7755132a7a8a8a7ed7717d0.jpg");
+;// CONCATENATED MODULE: ./src/components/Settings/model.js
+
+
+
+
+
+
+var settingData = {
+  desktop: {
+    titleHead: 'Desktop versions',
+    data: [{
+      title: 'Desktop Full Dark',
+      icon: desktop_full_dark
+    }, {
+      title: 'Desktop Short Light',
+      icon: desktop_short_light
+    }]
+  },
+  laptop: {
+    titleHead: 'Laptop versions',
+    data: [{
+      title: 'Laptop Full Dark',
+      icon: laptop_dark
+    }, {
+      title: 'Laptop Short Light',
+      icon: laptop_light
+    }, {
+      title: 'Mobile Dark',
+      icon: mobile_dark
+    }, {
+      title: 'Mobile Light',
+      icon: mobile_light
+    }]
+  },
+  mobile: {
+    titleHead: 'Mobile versions',
+    data: [{
+      title: 'Mobile Dark',
+      icon: mobile_dark
+    }, {
+      title: 'Mobile Light',
+      icon: mobile_light
+    }]
+  }
+};
+// EXTERNAL MODULE: ./src/ui/Skeleton/Skeleton.js
+var Skeleton = __webpack_require__(710);
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(893);
 ;// CONCATENATED MODULE: ./src/components/Settings/Settings.jsx
-
-
-
-
 
 
 
@@ -66,91 +130,37 @@ var Settings = function Settings() {
           className: classnames_default()('mb-4', Settings_module.settingsTitle),
           children: "Settings"
         })]
-      }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
         className: "row",
-        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-          className: "col-12",
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
-            className: Settings_module.settingsHead,
-            children: "Desktop version"
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "pt-3 border rounded position-relative",
-            children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-              className: "row",
-              children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: desktop_full_dark,
-                  alt: "Desktop Full Dark"
+        children: Object.values(settingData).map(function (setting) {
+          return /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+            className: "col-12",
+            children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
+              className: Settings_module.settingsHead,
+              children: setting.titleHead
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+              className: "pt-3 border rounded position-relative",
+              children: /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+                className: "row",
+                children: setting.data.map(function (item) {
+                  return /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
+                    className: "col-12 col-md-6",
+                    children: item.icon ? /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
+                      className: "img-fluid",
+                      loading: "lazy",
+                      src: item.icon,
+                      alt: item.title
+                    }) : /*#__PURE__*/(0,jsx_runtime.jsx)(Skeleton/* default */.Z, {
+                      count: 12
+                    })
+                  }, item.title);
                 })
-              }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6 mt-4 mt-md-0",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: desktop_short_light,
-                  alt: "Desktop Short Light"
-                })
-              })]
-            })
-          })]
-        }), /*#__PURE__*/(0,jsx_runtime.jsx)("hr", {
-          className: "border-3 my-4"
-        }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-          className: "col-12",
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
-            className: Settings_module.settingsHead,
-            children: "Laptop version"
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "pt-3 border rounded position-relative",
-            children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-              className: "row",
-              children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: laptop_dark,
-                  alt: "Laptop Full"
-                })
-              }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6 mt-4 mt-md-0",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: laptop_light,
-                  alt: "Laptop Short"
-                })
-              })]
-            })
-          })]
-        }), /*#__PURE__*/(0,jsx_runtime.jsx)("hr", {
-          className: "border-3 my-4"
-        }), /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-          className: "col-12",
-          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h4", {
-            className: Settings_module.settingsHead,
-            children: "Mobile version"
-          }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-            className: "pt-3 border rounded position-relative",
-            children: /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
-              className: "row",
-              children: [/*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6 text-center",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: mobile_dark,
-                  alt: "Mobile dark"
-                })
-              }), /*#__PURE__*/(0,jsx_runtime.jsx)("div", {
-                className: "col-12 col-md-6 mt-4 mt-md-0 text-center",
-                children: /*#__PURE__*/(0,jsx_runtime.jsx)("img", {
-                  className: "img-fluid",
-                  src: mobile_light,
-                  alt: "Mobile light"
-                })
-              })]
-            })
-          })]
-        })]
+              })
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("hr", {
+              className: "border-3 my-4"
+            })]
+          }, setting.titleHead);
+        })
       })]
     })
   });
